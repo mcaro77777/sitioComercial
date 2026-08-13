@@ -3,11 +3,19 @@
 
   const menuButton = document.querySelector(".menu-toggle");
   const navigation = document.querySelector(".main-nav");
+  const header = document.querySelector(".site-header");
   const form = document.querySelector("#contact-form");
   const formStatus = document.querySelector("#form-status");
   const year = document.querySelector("#year");
 
   if (year) year.textContent = String(new Date().getFullYear());
+
+  function updateHeader() {
+    if (header) header.classList.toggle("scrolled", window.scrollY > 24);
+  }
+
+  updateHeader();
+  window.addEventListener("scroll", updateHeader, { passive: true });
 
   function closeMenu() {
     if (!menuButton || !navigation) return;
