@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sisfru.cl/sitemap.xml
+Sitemap: https://gesfru.cl/sitemap.xml

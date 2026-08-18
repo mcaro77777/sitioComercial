@@ -9,8 +9,8 @@ Puedes abrir `index.html` directamente o servir la carpeta con cualquier servido
 Para validar exactamente la imagen de producción:
 
 ```sh
-docker build -t sisfru-web .
-docker run --rm -p 8080:80 sisfru-web
+docker build -t gesfru-web .
+docker run --rm -p 8080:80 gesfru-web
 ```
 
 Luego abre `http://localhost:8080`.
@@ -20,7 +20,7 @@ Luego abre `http://localhost:8080`.
 1. Crea un servicio **App** conectado al repositorio Git.
 2. Selecciona esta carpeta como directorio de compilación si el repositorio contiene otros proyectos.
 3. Easypanel detectará el `Dockerfile`.
-4. Configura el dominio `sisfru.cl` y el puerto proxy `80`.
+4. Configura el dominio `gesfru.cl` y el puerto proxy `80`.
 5. Despliega y activa el certificado HTTPS automático.
 
 ## Formulario · fase pendiente
