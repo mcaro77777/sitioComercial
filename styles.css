@@ -45,7 +45,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .menu-toggle { display: none; background: none; border: 0; padding: 12px; }
 
 .hero { position: relative; isolation: isolate; min-height: 740px; height: min(860px, 100svh); background: var(--ink); color: white; overflow: hidden; display: grid; grid-template-columns: minmax(420px, .88fr) minmax(560px, 1.12fr); gap: clamp(26px, 3vw, 58px); align-items: center; padding: 105px clamp(30px, 5.2vw, 86px) 52px; }
-.hero-media { position: absolute; inset: 0; z-index: -3; overflow: hidden; background: #071a1d url("images/agroexport-poster.jpg") center / cover no-repeat; }
+.hero-media { position: absolute; inset: 0; z-index: -3; overflow: hidden; background: #071a1d url("images/agroexport-poster.jpg?v=2") center / cover no-repeat; }
 .hero-video { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center 48%; opacity: 1; filter: brightness(1.9) saturate(.96) contrast(1.02); transform: scale(1.015); }
 .hero::after { content: ""; position: absolute; inset: 0; z-index: -2; pointer-events: none; background: linear-gradient(90deg, rgba(4,20,22,.98) 0%, rgba(4,20,22,.93) 30%, rgba(4,20,22,.58) 49%, rgba(4,20,22,.06) 72%, rgba(4,20,22,.1) 100%), linear-gradient(0deg, rgba(4,20,22,.82) 0%, transparent 38%, rgba(4,20,22,.1) 100%); }
 .hero-grid { position: absolute; inset: 0; z-index: -1; opacity: .65; background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px); background-size: 78px 78px; mask-image: linear-gradient(to right, black, transparent 90%); }
@@ -204,7 +204,8 @@ body { background: #061719; }
 #contenido { background: #061719; }
 .hero { width: calc(100% - clamp(32px,5vw,72px)); max-width: 1780px; min-height: 590px; height: min(660px,calc(100svh - 118px)); margin: 0 auto; padding: clamp(48px,4.2vw,72px); display: flex; align-items: center; isolation: isolate; border: 1px solid rgba(255,255,255,.12); border-radius: 26px; background: var(--ink); box-shadow: 0 34px 90px rgba(0,0,0,.34); }
 .hero-media { border-radius: inherit; }
-.hero-video { object-position: center 52%; opacity: 1; filter: brightness(1.02) saturate(.84) contrast(1.06); transform: scale(1.01); }
+.hero-media::after { content:""; position:absolute; inset:0; z-index:1; pointer-events:none; background: radial-gradient(ellipse at 63% 45%,transparent 32%,rgba(2,12,14,.12) 64%,rgba(2,10,12,.36) 100%),linear-gradient(135deg,rgba(2,31,34,.22) 0%,transparent 48%,rgba(190,91,36,.1) 100%); box-shadow: inset 0 0 110px rgba(0,0,0,.18); }
+.hero-video { position:relative; z-index:0; object-position: center 52%; opacity: 1; filter: brightness(1.08) contrast(1.18) saturate(.88) sepia(.025); transform: scale(1.012); will-change: transform; }
 .hero::before { display: none; }
 .hero::after { z-index: -2; background: linear-gradient(90deg,rgba(3,15,17,.9) 0%,rgba(3,15,17,.68) 34%,rgba(3,15,17,.22) 65%,rgba(3,15,17,.14) 100%),linear-gradient(0deg,rgba(3,15,17,.86) 0%,rgba(3,15,17,.15) 56%,rgba(3,15,17,.14) 100%); }
 .hero-copy { width: min(760px,55%); max-width: none; }
