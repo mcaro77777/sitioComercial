@@ -24,7 +24,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .site-header.scrolled { height: 70px; background: rgba(7,26,29,.9); border-color: rgba(199,242,91,.12); box-shadow: 0 12px 40px rgba(0,0,0,.24); backdrop-filter: blur(18px); }
 .brand { display: inline-flex; align-items: center; gap: 11px; min-width: max-content; transition: opacity .2s, transform .2s; }
 .brand:hover { opacity: .92; transform: translateY(-1px); }
-.brand-symbol { display: block; width: 44px; height: 44px; flex: 0 0 44px; object-fit: contain; filter: drop-shadow(0 5px 14px rgba(0,0,0,.18)); }
+.brand-symbol { display: block; width: 40px; height: 40px; flex: 0 0 40px; object-fit: contain; opacity: .92; filter: brightness(.96) saturate(.96) drop-shadow(0 3px 9px rgba(0,0,0,.13)); }
 .brand-lockup { display: flex; flex-direction: column; justify-content: center; gap: 2px; line-height: 1; }
 .brand-wordmark { display: flex; align-items: baseline; font-size: 21px; font-weight: 850; letter-spacing: -.025em; }
 .brand-wordmark b { font: inherit; }
