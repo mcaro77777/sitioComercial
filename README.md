@@ -1,4 +1,4 @@
-# SISFRU · Sitio comercial estático
+# GESFRU · Sitio comercial estático
 
 Sitio comercial construido con HTML, CSS y JavaScript nativos. No requiere Node.js ni proceso de compilación en producción.
 
